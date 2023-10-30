@@ -1,1 +1,10 @@
 # move_mesh2
+
+meshの位置がバグる問題を改善したいです。
+
+初めにchair_dataset3.pkl.zipの解凍をお願いします。
+
+mesh_check.pyではデータセット内に含まれる各椅子のsceneに関する情報を調べられます。
+delete_other_legs.pyでは必要なmeshを一つのmeshにまとめる作業をしていますが、統合後のmeshの姿勢や位置がずれてしまいます。
+unstable_chairディレクトリ内ではそれぞれの椅子の上部をランダムな値で動かそうとしていますが、scene0のみ成功している状況で、scene1では部材ごとに動く幅が異なる問題、scene2ではそもそも動かない問題が発生しています。scene2のmesh_names_to_move内のmesh_nameはランダムに選んでいます。
+
